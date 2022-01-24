@@ -1,0 +1,52 @@
+{
+    "name": "goodpayments/datatrans",
+    "description": "GoodPayments Datatrans",
+    "keywords": [
+        "log",
+        "logging"
+    ],
+    "license": "MIT",
+    "support": {
+        "source": "https://github.com/Websitedevelopement/datatrans"
+    },
+    "require": {
+        "php": "^7.4|^8.0",
+        "illuminate/contracts": "^8.0",
+        "google/apiclient": "^2.2",
+        "sendgrid/sendgrid": "^7.11"
+    },
+    "authors": [
+        {
+            "name": "Dmytro",
+            "email": "senior@gmail.com",
+            "homepage": "https://github.com/Websitedevelopement/datatrans",
+            "role": "Developer"
+        }
+    ],
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "GoodPayments\\Datatrans\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "GoodPayments\\Datatrans\\Tests\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "GoodPayments\\Datatrans\\Providers\\DatatransServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

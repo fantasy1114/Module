@@ -1,0 +1,387 @@
+.bs-stepper .step-trigger.disabled, .bs-stepper .step-trigger:disabled{
+    opacity: 1;
+}
+.btn-next-bgcolor{
+    background-color: #f4662f;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 9px 18px;
+    border-radius: 4px;
+}
+.btn-back-bgcolor{
+    background-color: #f4662f;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 9px 30px;
+    border-radius: 4px;
+    height: 48px;
+}
+.btn-next-font{
+    font-size: 14px;
+}
+.btn-next-bgcolor:hover, .btn-back-bgcolor:hover{
+    color: #fff;
+}
+.progress-step{
+    height: 15px;
+    width: calc(100% - 10px);
+    background-color: #bec3c7;
+}
+.step:first-child > .progress-step{
+    border-radius: 5px 0 0 5px;
+}
+.step:last-child > .progress-step{
+    border-radius: 0 5px 5px 0;
+}
+.active > .progress-step, .crossed > .progress-step{
+    background-color: #f4662f;
+}
+.step{
+    width: 20%;
+}
+.content-header-explain{
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: inherit;
+}
+.btn-pagenation{
+    border-top: 1px solid silver !important;
+}
+
+/* ----------------- Begin Calendar Custom ------------------------ */
+
+.form-select{
+    padding: 5px 6px 4px;
+    outline: none;
+    font-size: 14px;
+    line-height: normal;
+    border: 1px solid silver;
+    border-radius: 4px;
+}
+.form-control{
+    font-size: 14px;
+    line-height: normal;
+    border: 1px solid silver;
+    border-radius: 4px;
+}
+.service-label-color{
+    color: #f4662f;
+    font-weight: 600;
+}
+.picker--opened .picker__holder{
+    max-width: 320px;
+    max-height: 300px;
+    background: #f4662f;
+    border-radius: 5px;
+}
+.picker--opened .picker__holder *{
+    line-height: 16px !important;
+}
+.picker__button--clear, .picker__button--close{
+    display: none !important;
+}
+.picker__day--disabled{
+    background: none;
+    opacity: 0.5;
+    color: #fff;
+}
+.picker__day--disabled:hover, .picker__day--outfocus:hover{
+    color: #f4662f;
+    background: #fff;
+    border-radius: 4px;
+}
+.picker__weekday{
+    font-weight: normal;
+    text-align: center;
+    padding: 0;
+    padding-bottom: 0.5em;
+    border: 0;
+    background: none;
+    color: #fff ;
+    font-size: 14px;
+}
+.picker__year{
+    font-style: italic;
+    font-size: 14px;
+    font-weight: bold;
+    border: 0;
+    color: #fff;
+}
+.picker__month{
+    font-size: 14px;
+    font-weight: bold;
+    border: 0;
+    color: #fff;
+}
+.picker__day--infocus{
+    font-size: 14px;
+    font-weight: bold;
+    border: 0;
+    color: #fff;
+}
+.picker__day--infocus:hover{
+    color: #f4662f;
+    border-radius: 4px !important;
+}
+.picker__day--outfocus{
+    opacity: 0.5;
+    color: #fff;
+}
+.picker__button--today{
+    color: #f4662f;
+    font-size: 14px;
+    font-weight: 600;
+    border: 0;
+    padding: 10px 20px !important;
+    margin-bottom: 10px;
+}
+.picker__button--today::before{
+    display: none;
+}
+.picker__day{
+    padding: 0.3125em 0 !important;
+}
+.pickadate{
+    background-color: #fff !important;
+}
+.picker__day--today{
+    border: 1px solid #fff !important;
+    background-color: #f4662f !important;
+    border-radius: 4px !important;
+}
+.picker__day--today::before{
+    display: none;
+}
+.picker__day--today:hover{
+    color: #fff !important;
+}
+.picker__day--highlighted{
+    background-color: #fff !important;
+    color: #f4662f !important;
+}
+.picker__nav--next::before{
+    border-left: 6px solid #f4662f !important;
+    border-right: 0 !important;
+    content: " ";
+    border-top: 0.5em solid transparent;
+    border-bottom: 0.5em solid transparent;
+    width: 0;
+    height: 0;
+    display: block;
+    margin: 0 auto
+}
+.picker__nav--next{
+    color: #f4662f !important;
+    box-sizing: content-box;
+    background: #fff !important;
+    border-radius: 50%;
+    font-size: 14px!important;
+    font-weight: bold!important;
+    border: 0!important;
+    right: 0;
+    position: absolute;
+    width: 1em;
+    height: 1em;
+}
+.picker__nav--prev::before{
+    border-right: 6px solid #f4662f !important;
+    border-left: 0 !important;
+    content: " ";
+    border-top: 0.5em solid transparent;
+    border-bottom: 0.5em solid transparent;
+    width: 0;
+    height: 0;
+    display: block;
+    margin: 0 auto
+}
+.picker__nav--prev{
+    color: #f4662f !important;
+    box-sizing: content-box;
+    background: #fff !important;
+    border-radius: 50%;
+    font-size: 14px!important;
+    font-weight: bold!important;
+    border: 0!important;
+    right: 0;
+    position: absolute;
+    width: 1em;
+    height: 1em;
+}
+.picker__nav--disabled{
+    display: none;
+}
+
+/* -------------- End Calendar Custom --------------------- */
+
+/* ----------------------- Time Zone ---------------------- */
+.timezone_name{
+    height: auto;
+    width: 220px;
+}
+.datatrans-column{
+    min-width: 127px;
+    padding: 0 5px;
+    display: inline-block;
+    zoom: 1;
+}
+.datatrans-day{
+    background: #f4662f;
+    color: white;
+    font-weight: bold;
+    border: 1px solid #f4662f;
+    display: block ;
+    min-width: 0;
+    width: 100%;
+    margin: 1.5px 0;
+    height: 36px;
+    padding: 6px;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+    float: none ;
+    text-transform: none;
+    border-radius: 4px;
+}
+.datatrans-hour{
+    background: white;
+    cursor: pointer;
+    display: block ;
+    min-width: 0;
+    width: 100%;
+    margin: 1.5px 0;
+    height: 36px;
+    padding: 6px;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+    float: none ;
+    text-transform: none;
+    border: 1px solid #cccccc ;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.datatrans-hour:hover{
+    border: 2px solid #f4662f;
+    color: #f4662f;
+}
+.datatrans-hour:hover .datatrans-hour-icon{
+    background: none;
+    border: 2px solid #f4662f;
+    color: #f4662f;
+    width: auto;
+    height: auto;
+    padding: 3px;
+    border-radius: 25px;
+    margin-right: 3px;
+}
+.datatrans-hour:hover .datatrans-hour-icon span{
+    background: #f4662f;
+    width: 8px;
+    height: 8px;
+    border-radius: 10px;
+    display: block;
+}
+.datatrans-time-main{
+    font-weight: normal;
+    color: #333 !important;
+    display: flex;
+    justify-content: center;
+}
+.datatrans-hour-icon{
+    display: block;
+    float: left;
+    width: 18px;
+    height: 18px;
+    margin-top: 1px;
+    margin-right: 5px;
+    background: url('/vendor/datatrans/images/success.png') 0 0 no-repeat;
+}
+.datatrans-column{
+    vertical-align: top;
+}
+.datatrans-columnizer{
+    height: 376.5px;
+    overflow: hidden;
+}
+/* End TimeZone -------------------- */
+
+/* Begin Pagenation Custom ------------------*/
+     
+.simple-pagination ul {
+    margin: 0 0 20px;
+    padding: 0;
+    list-style: none;
+}
+
+.simple-pagination li {
+    display: none;
+    margin-right: 5px;
+}
+.simple-pagination li:first-child, .simple-pagination li:last-child{
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.simple-pagination li a,
+.simple-pagination li span {
+    border-radius: 4px;
+    background: #f4662f;
+    color: white;
+    font-weight: bold;
+    padding: 10px 30px;
+    font-size: 20px;
+    text-align: center;
+}
+.simple-pagination li a:hover,
+.simple-pagination li span:hover{
+    background: #f4662f;
+    color: white;
+}
+
+
+.simple-pagination .prev.current,
+.simple-pagination .next.current {
+    background-color: #f4662f;
+}
+/* End Pagenation -------------------- */
+
+/* Begin Phone Custom  ----------------- */
+
+.selected-flag{
+    width: 75px !important;
+    padding: 0 0 0 5px !important;
+}
+.iti-flag{
+    zoom: 0.5;
+}
+.intl-tel-input.allow-dropdown input, .intl-tel-input.allow-dropdown input[type=text], .intl-tel-input.allow-dropdown input[type=tel]{
+    padding-left: 75px;
+}
+.intl-tel-input{
+    height: 34px;
+}
+.country-list{
+    width: 300px;
+    max-height: 350px !important;
+    overflow-x: hidden;
+}
+.intl-tel-input .country-list .country{
+    padding: 10px 5px;
+}
+.intl-tel-input{
+    display: block;
+}
+.intl-tel-input .country-list .flag-box{
+    margin-right: 10px !important;
+}
+.intl-tel-input .country-list .flag-box{
+    width: 40px;
+}
+.country-list li{
+    width: 100%;
+}
+
+/* End ------------------------ */
